@@ -34,3 +34,4 @@ console.log(RabbitList[0].Speed);
 RabbitList[0].Speed = 20;
 console.log(RabbitList[0].Speed);
 console.log(RabbitList[0].animal);
+console.log("Ok");
