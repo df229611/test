@@ -57,12 +57,31 @@ class Rabbit extends Animal{
 }
 
 let RabbitList = [];
+
+class Car extends Animal{
+
+	constructor(id, x, y, speed, color){
+
+		super(id, x, y, speed);
+		this.color = color;
+	}
+}
+
+CarList = [];
+
 RabbitList[0] = new Rabbit(0, 100, 200, 10, "rabbit");
+
+CarList[0] = new Car(0, 10, 20, 100, "red");
+
 console.log(RabbitList[0].Speed);
 RabbitList[0].Speed = 20;
 console.log(RabbitList[0].Speed);
-console.log(RabbitList[0].animal);
 RabbitList[0].moveLeft();
 RabbitList[0].moveUp();
 RabbitList[0].showAll();
+console.log(RabbitList[0].animal);
+CarList[0].showAll();
+console.log(CarList[0].color);
+
+
 
