@@ -17,6 +17,34 @@ class Animal{
 
 		this.speed = speed;
 	}
+
+	moveLeft(){
+
+		this.x-=this.speed;
+	}
+
+	moveRight(){
+
+		this.x+=this.speed;
+	}
+
+	moveUp(){
+
+		this.y-=this.speed;
+	}
+
+	moveDown(){
+
+		this.y+=this.speed;
+	}
+
+	showAll(){
+
+		console.log(this.id);
+		console.log(this.x);
+		console.log(this.y);
+		console.log(this.speed);
+	}
 }
 
 class Rabbit extends Animal{
@@ -29,9 +57,12 @@ class Rabbit extends Animal{
 }
 
 let RabbitList = [];
-RabbitList[0] = new Rabbit(0, 100, 100, 10, "rabbit");
+RabbitList[0] = new Rabbit(0, 100, 200, 10, "rabbit");
 console.log(RabbitList[0].Speed);
 RabbitList[0].Speed = 20;
 console.log(RabbitList[0].Speed);
 console.log(RabbitList[0].animal);
-console.log("Ok");
+RabbitList[0].moveLeft();
+RabbitList[0].moveUp();
+RabbitList[0].showAll();
+
