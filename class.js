@@ -81,6 +81,8 @@ RabbitList[0].moveUp();
 RabbitList[0].showAll();
 console.log(RabbitList[0].animal);
 CarList[0].showAll();
+CarList[0].moveDown();
+CarList[0].showAll();
 console.log(CarList[0].color);
 
 
