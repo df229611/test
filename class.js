@@ -85,5 +85,7 @@ CarList[0].moveDown();
 CarList[0].showAll();
 console.log(CarList[0].color);
 
+console.log("Hello World!");
+
 
 
